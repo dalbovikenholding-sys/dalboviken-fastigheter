@@ -2698,42 +2698,70 @@
 </div>
 </section>
 </ws-block><ws-block border-width="1" category="contacts" content-alignment="middle" content-direction="normal" data-ws-variation-id="contacts-splitscreen-with-iframe-common" id="ws-block-contacts-splitscreen-with-iframe-DETXUOqG" media-column-width="6" src="https://69bec439de49e.yolasitebuilder.loopia.com/ws/block-templates/contacts-splitscreen-with-iframe/index.html" surfaces="ws-light-1" user-modified="white-space-bottom" white-space-bottom="104" white-space-top="0"><section class="ws-section ws-surface ws-light-1" data-surface="0" data-ws-hidden-children="block_media block_title business_address business_hours business_phone" data-ws-slots="business-email business-social-profiles">
-<div class="ws-m-split-layout">
-<div class="ws-m-split-layout__content ws-block-content">
-<div class="ws-m-block-title-fit-wrapper">
-<div class="ws-m-block-title-570">
+<div style="max-width:600px;margin:0 auto;padding:48px 24px;">
+<h2 style="font-size:1.75rem;font-weight:600;margin-bottom:8px;color:#1a2535;">Kontakta oss</h2>
+<p style="color:#666;margin-bottom:32px;font-size:0.95rem;">Vi svarar inom ett par dagar.</p>
+<form id="contact-form" style="display:flex;flex-direction:column;gap:16px;">
+<input type="hidden" name="access_key" value="WEB3FORMS_KEY_HERE">
+<input type="hidden" name="subject" value="Kontaktförfrågan – Dalboviken Fastigheter">
+<input type="hidden" name="redirect" value="false">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+<div>
+<label style="display:block;font-size:0.85rem;font-weight:500;margin-bottom:6px;color:#1a2535;">Förnamn</label>
+<input type="text" name="Förnamn" required placeholder="Anna" style="width:100%;padding:12px 14px;border:1px solid #d4d8de;border-radius:8px;font-size:0.9rem;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#2a4a7f'" onblur="this.style.borderColor='#d4d8de'">
 </div>
-<div class="ws-m-business-info ws-m-business-info--with-icon">
-<p><a href="mailto:info@dalboviken.se">info@dalboviken.se</a></p>
-<ws-global slot="business-social-profiles" src="https://69bec439de49e.yolasitebuilder.loopia.com/ws/globals/social-links/index.html"><ws-social-icons>
-<ul>
-<li>
-<a href="#" target="_blank">
-<ws-icon src="https://69bec439de49e.yolasitebuilder.loopia.com/ws/common/icons/facebook-logo.ws-intense-next-hotel.svg"></ws-icon>
-</a>
-</li>
-<li>
-<a href="#" target="_blank">
-<ws-icon src="https://69bec439de49e.yolasitebuilder.loopia.com/ws/common/icons/instagram-logo.ws-intense-next-hotel.svg"></ws-icon>
-</a>
-</li>
-<li>
-<a href="#" target="_blank">
-<ws-icon src="https://69bec439de49e.yolasitebuilder.loopia.com/ws/common/icons/linkedin-logo.ws-intense-next-hotel.svg"></ws-icon>
-</a>
-</li>
-<li>
-<a href="#" target="_blank">
-<ws-icon src="https://69bec439de49e.yolasitebuilder.loopia.com/ws/common/icons/twitter-logo.ws-intense-next-hotel.svg"></ws-icon>
-</a>
-</li>
-</ul>
-</ws-social-icons></ws-global>
+<div>
+<label style="display:block;font-size:0.85rem;font-weight:500;margin-bottom:6px;color:#1a2535;">Efternamn</label>
+<input type="text" name="Efternamn" required placeholder="Lindgren" style="width:100%;padding:12px 14px;border:1px solid #d4d8de;border-radius:8px;font-size:0.9rem;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#2a4a7f'" onblur="this.style.borderColor='#d4d8de'">
 </div>
 </div>
+<div>
+<label style="display:block;font-size:0.85rem;font-weight:500;margin-bottom:6px;color:#1a2535;">E-postadress</label>
+<input type="email" name="E-post" required placeholder="anna@dittforetag.se" style="width:100%;padding:12px 14px;border:1px solid #d4d8de;border-radius:8px;font-size:0.9rem;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#2a4a7f'" onblur="this.style.borderColor='#d4d8de'">
 </div>
-<div class="ws-m-split-layout__media ws-block-media-content">
+<div>
+<label style="display:block;font-size:0.85rem;font-weight:500;margin-bottom:6px;color:#1a2535;">Telefonnummer <span style="color:#999;font-weight:400;">(valfritt)</span></label>
+<input type="tel" name="Telefon" placeholder="070-123 45 67" style="width:100%;padding:12px 14px;border:1px solid #d4d8de;border-radius:8px;font-size:0.9rem;outline:none;transition:border-color .2s;" onfocus="this.style.borderColor='#2a4a7f'" onblur="this.style.borderColor='#d4d8de'">
 </div>
+<div>
+<label style="display:block;font-size:0.85rem;font-weight:500;margin-bottom:6px;color:#1a2535;">Meddelande</label>
+<textarea name="Meddelande" required rows="4" placeholder="Berätta kort om er situation och vad ni söker..." style="width:100%;padding:12px 14px;border:1px solid #d4d8de;border-radius:8px;font-size:0.9rem;outline:none;resize:vertical;transition:border-color .2s;font-family:inherit;" onfocus="this.style.borderColor='#2a4a7f'" onblur="this.style.borderColor='#d4d8de'"></textarea>
+</div>
+<button type="submit" id="contact-submit" style="background:#1a2535;color:#fff;border:none;padding:14px 28px;border-radius:8px;font-size:0.9rem;font-weight:600;cursor:pointer;transition:background .2s;letter-spacing:0.03em;" onmouseover="this.style.background='#2a4a7f'" onmouseout="this.style.background='#1a2535'">Skicka</button>
+<p id="contact-status" style="display:none;font-size:0.9rem;text-align:center;"></p>
+</form>
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('contact-submit');
+  const status = document.getElementById('contact-status');
+  btn.textContent = 'Skickar...';
+  btn.disabled = true;
+  const data = Object.fromEntries(new FormData(this));
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', Accept: 'application/json'},
+      body: JSON.stringify(data)
+    });
+    const json = await res.json();
+    if (json.success) {
+      status.style.display = 'block';
+      status.style.color = '#2a6a3f';
+      status.textContent = 'Tack! Vi hör av oss inom ett par dagar.';
+      this.reset();
+    } else {
+      throw new Error();
+    }
+  } catch {
+    status.style.display = 'block';
+    status.style.color = '#c0392b';
+    status.textContent = 'Något gick fel. Försök igen eller maila info@dalboviken.se.';
+  }
+  btn.textContent = 'Skicka';
+  btn.disabled = false;
+});
+</script>
 </div>
 </section>
 </ws-block>
