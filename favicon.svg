@@ -1,14 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="12" fill="#1A2535"/>
-  <svg x="6" y="6" width="52" height="52" viewBox="0 0 512 512">
-    <circle cx="256" cy="256" r="208" stroke="#FFFFFF" stroke-width="28" fill="none"/>
-    <polygon points="256,256 256,140 306,198" fill="#F0F0F0"/>
-    <polygon points="256,256 306,198 356,256" fill="#AAAAAA"/>
-    <polygon points="256,256 356,256 306,314" fill="#666666"/>
-    <polygon points="256,256 306,314 256,372" fill="#EEEEEE"/>
-    <polygon points="256,256 256,372 206,314" fill="#999999"/>
-    <polygon points="256,256 206,314 156,256" fill="#BBBBBB"/>
-    <polygon points="256,256 156,256 206,198" fill="#DDDDDD"/>
-    <polygon points="256,256 206,198 256,140" fill="#FFFFFF"/>
+  <svg x="6" y="6" width="52" height="52" viewBox="0 0 512 512" shape-rendering="geometricPrecision">
+    <defs>
+      <linearGradient id="fv-f1" x1="313" y1="159" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#F5F5F5"/><stop offset="100%" stop-color="#D0D0D0"/>
+      </linearGradient>
+      <linearGradient id="fv-f2" x1="369" y1="256" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#ACACAC"/><stop offset="100%" stop-color="#646464"/>
+      </linearGradient>
+      <linearGradient id="fv-f3" x1="313" y1="354" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#222222"/><stop offset="100%" stop-color="#050505"/>
+      </linearGradient>
+      <linearGradient id="fv-f4" x1="200" y1="354" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#3C3C3C"/><stop offset="100%" stop-color="#161616"/>
+      </linearGradient>
+      <linearGradient id="fv-f5" x1="143" y1="256" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#848484"/><stop offset="100%" stop-color="#484848"/>
+      </linearGradient>
+      <linearGradient id="fv-f6" x1="200" y1="159" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#FEFEFE"/><stop offset="100%" stop-color="#DCDCDC"/>
+      </linearGradient>
+      <radialGradient id="fv-shine" cx="204" cy="150" r="88" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </radialGradient>
+      <clipPath id="fv-gem">
+        <polygon points="256,126 369,191 369,321 256,386 143,321 143,191"/>
+      </clipPath>
+    </defs>
+    <circle cx="256" cy="256" r="208" stroke="#FFFFFF" stroke-width="22" fill="none"/>
+    <polygon points="256,256 256,126 369,191" fill="url(#fv-f1)" stroke="url(#fv-f1)" stroke-width="0.6"/>
+    <polygon points="256,256 369,191 369,321" fill="url(#fv-f2)" stroke="url(#fv-f2)" stroke-width="0.6"/>
+    <polygon points="256,256 369,321 256,386" fill="url(#fv-f3)" stroke="url(#fv-f3)" stroke-width="0.6"/>
+    <polygon points="256,256 256,386 143,321" fill="url(#fv-f4)" stroke="url(#fv-f4)" stroke-width="0.6"/>
+    <polygon points="256,256 143,321 143,191" fill="url(#fv-f5)" stroke="url(#fv-f5)" stroke-width="0.6"/>
+    <polygon points="256,256 143,191 256,126" fill="url(#fv-f6)" stroke="url(#fv-f6)" stroke-width="0.6"/>
+    <rect width="512" height="512" fill="url(#fv-shine)" clip-path="url(#fv-gem)"/>
+    <polygon points="256,126 369,191 369,321 256,386 143,321 143,191" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
   </svg>
 </svg>
